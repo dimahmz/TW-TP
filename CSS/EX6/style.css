@@ -1,0 +1,10 @@
+article {
+  border: 2px solid gray;
+  padding: 15px 20px;
+}
+.first-para::first-letter,
+.second-para::first-letter {
+  font-size: 70px;
+  font-weight: 400;
+  color: red;
+}
