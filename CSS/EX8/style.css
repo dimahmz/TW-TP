@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  width: 200px;
+  height: 150px;
+  font-size: 16px;
+  color: blue;
+  background-color: #a2b1c0;
+  border: 1px solid black;
+  line-height: 150px;
+  text-align: center;
+}
+
+p:hover {
+  cursor: pointer;
+  font-size: 30px;
+  width: 230px;
+  height: 180px;
+}
