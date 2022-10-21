@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img-continer {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.img-continer img {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+}
+
+#page {
+  height: 100vh;
+  padding: 5px 25px;
+}
+
+#title {
+  font-size: x-large;
+  text-align: center;
+}
+p {
+  margin-top: 10px;
+}
+nav {
+  padding: 10px 45px;
+  background-image: linear-gradient(to bottom, white, rgb(230, 230, 230));
+}
+h3 {
+  margin: 10px auto;
+}
