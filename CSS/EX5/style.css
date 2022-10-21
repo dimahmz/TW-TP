@@ -1,0 +1,19 @@
+article {
+  border: 2px solid gray;
+  padding: 5px 15px;
+}
+.floated-box {
+  background-color: rgb(240, 236, 191);
+  padding: 5px 10px;
+  width: 100px;
+  margin: 5px;
+  float: right;
+}
+h1 {
+  font-size: 30px;
+  color: rgb(60, 60, 133);
+}
+.para {
+  font-style: italic;
+  color: rgb(146, 146, 146);
+}
