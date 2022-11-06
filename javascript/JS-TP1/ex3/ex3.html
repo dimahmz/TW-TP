@@ -1,0 +1,15 @@
+<script>
+  let nmbr1, nmbr2;
+do {
+  nmbr1 = parseFloat(prompt("entrer le premier nombre :"));
+} while (isNaN(nmbr1));
+
+do {
+  nmbr2 = parseFloat(prompt("entrer le dexieme nombre :"));
+} while (isNaN(nmbr2));
+
+const sum = nmbr1 + nmbr2;
+const mul = nmbr1 * nmbr2;
+
+alert(`${nmbr1} * ${nmbr2}=${mul}\n${nmbr1} + ${nmbr2}=${sum}`);
+</script>
