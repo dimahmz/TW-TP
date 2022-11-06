@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercice8</title>
+</head>
+<body>
+  <a href="#" onclick="chnageBackgound()">change the backgroud</a>
+</body>
+</html>
+
+<script>
+
+function randomNbr(){
+  return Math.floor(Math.random()*255);
+}
+function chnageBackgound(){
+document.body.style.background=`rgb(${randomNbr()},${randomNbr()},${randomNbr()})`;
+
+}
+
+const para=document.createElement("p");
+document.body.appendChild(para);
+para.textContent="un paragraphe";
+para.addEventListener("mouseover",()=>{
+  para.style.fontSize="30px";
+  para.style.color="blue";
+})
+para.addEventListener("mouseout",()=>{
+  para.style.fontSize="15px";
+  para.style.color="red";
+})
+</script>
