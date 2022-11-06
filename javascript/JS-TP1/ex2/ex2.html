@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercice2</title>
+</head>
+<body>
+  <h1>Identification du navugator</h1>
+  <hr>
+<p>  L'objet <b>navigator</b>  contient les informations suivantes sur votre navigateur :
+</p>
+<ul id="UL" style="list-style-type:square;">
+</ul>
+</body>
+</html>
+<script>
+
+const navigatorDetails = [
+  navigator.appCodeName,
+  navigator.language,
+  navigator.platform,
+  navigator.appName,
+  navigator.product,
+  navigator.appVersion,
+  navigator.userAgent,
+];
+const UL=document.getElementById("UL");
+
+navigatorDetails.forEach(info => {
+  const li=document.createElement("li");
+  li.textContent=info;
+  UL.appendChild(li);
+  
+});
+
+
+
+</script>
