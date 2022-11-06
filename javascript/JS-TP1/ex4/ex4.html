@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercice4</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script>
+
+let  age=prompt("saisir votre age :");
+
+while(isNaN(age) || (age<1 || age>120 )){
+
+  alert("vous devez saisir un age valider");
+
+  age=prompt("saisir votre age :");
+
+
+  }
+
+switch(true)  {
+  case (age<18) :
+    alert("Vous êtes encore majeur");
+    break;
+  case (age<50) :
+    alert("Vous êtes majeur mais pas encore senior");
+    break;
+  case (age<70) :
+    alert("Vous êtes senior mais vieux");
+    break;
+  default:
+    alert("Vous êtes vieux, profiter de votre temps libre !")
+}
+</script>
