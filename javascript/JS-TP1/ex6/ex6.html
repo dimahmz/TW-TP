@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercice 6</title>
+
+  <style>
+    #image-wrapper, .links-wrapper{
+      border: 4px solid #000;
+      padding: 10px 15px;
+
+    }
+    #image-wrapper{
+      margin: auto;
+      height: 50vh;
+      width: 60vw;
+    }
+    #image-wrapper img{
+      width: 100%;
+      height: 100%;
+    }
+    .links-wrapper{
+      margin: 30px 40px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="image-wrapper">
+    <img src="" alt="image d'une saison">
+  </div>
+
+  <div class="links-wrapper">
+    <nav>
+      <ul>
+        <li>
+          <a href="#image-wrapper" onclick="afficher('./images/printemps-image')">cliquer ici pour voir une image printemps</a>
+        </li>
+        <li>
+          <a href="#image-wrapper" onclick="afficher('./images/automne-image')">cliquer ici pour voir une image automne</a>
+        </li>
+        <li>
+          <a href="#image-wrapper" onclick="afficher('./images/automne-image')">cliquer ici pour voir une image automne</a>
+        </li>
+        <li>
+          <a href="#image-wrapper" onclick="afficher('./images/hiver-image')">cliquer ici pour voir une image hiver</a>
+        </li>
+        <li>
+          <a href="#image-wrapper" onclick="afficher('./images/image-vide')">cliquer ici pour voir une photo vide</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+</body>
+</html>
+
+<script>
+
+  document.images[0].scr="./images/image-vide";
+  function afficher(imagePath){
+    document.images[0].src=imagePath;
+  }
+
+</script>
