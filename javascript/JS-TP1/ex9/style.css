@@ -19,15 +19,17 @@ nav div {
   position: absolute;
   left: 0;
   top: 100%;
-  text-align: start;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
-  padding: 10px 15px;
+  text-align: start;
+  padding: 20px 15px;
   box-shadow: rgba(0, 0, 0) 5px 5px 4px;
   visibility: hidden;
 }
 .links-wrapper a {
   text-decoration: none;
-  display: block;
+  white-space: nowrap;
 }
 
 .hide-links {
