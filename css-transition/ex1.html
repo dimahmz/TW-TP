@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercice 1</title>
+  <style>
+
+    .images-container,nav{
+      margin: 70px auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 900px;
+    }
+    nav{
+      max-width: 500px;
+      background-color: #eee;
+      padding: 10px 15px;
+    }
+    nav div{
+      border-bottom: 1px solid #fff ;
+    }
+
+    img{
+      display: relative;
+      transform: translateX(0);
+      transition: transform 2s ease-in-out;
+    }
+    .img1:hover{
+      transform: translateX(200px);
+    }
+    .img2:hover{
+      transform: translateY(200px);
+    }
+    .img3:hover{
+      transform: scale(2);
+    }
+    .img4:hover{
+      transform: rotate(90deg);
+    }
+
+</style>
+</head>
+<body>
+  <nav>
+    <div>menu</div>
+    <div>menu</div>
+    <div>menu</div>
+  </nav>
+  <div class="images-container">
+    <img class="img1" src="https://random.imagecdn.app/150/108" alt="a random image">
+    <img class="img2" src="https://random.imagecdn.app/150/106" alt="a random image">
+    <img class="img3" src="https://random.imagecdn.app/150/103" alt="a random image">
+    <img class="img4" src="https://random.imagecdn.app/150/100" alt="a random image">
+  </div>
+</body>
+</html>
