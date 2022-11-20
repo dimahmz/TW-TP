@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>exercice1-les-formulaires</title>
+    <style>
+      #t1 {
+        display: inline-block;
+        position: absolute;
+        left: 380px;
+      }
+
+      #t2 {
+        display: inline-block;
+        position: absolute;
+        left: 560px;
+      }
+
+      td {
+        min-width: 250px;
+      }
+      table{
+        border: 1px solid #000;
+        margin: 10px;
+        padding: 10px 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form name="FORME">
+        <table>
+          <tr>
+            <td><h4>Civilité</h4></td>
+            <td>
+              <input type="radio" checked name="sex" id="Ms" value="Mademoiselle" />
+              <label for="Ms">Mademoiselle</label>
+              <input type="radio" name="sex" id="Ma" value="Madame" />
+              <label for="Ms">Madame</label>
+              <input type="radio" name="sex" id="Mo" value="Monsieur" />
+              <label for="Ms">Monsieur</label>
+            </td>
+          </tr>
+          <tr>
+            <td><h4>Nom / Prénom</h4></td>
+            <td><input type="text" name="nom" id="nomPrenom" minlength="3"  maxlength="25" size="50px"/>
+            </td>
+          </tr>
+          <tr>
+            <td>Adresse</td>
+            <td>
+              <textarea cols="80" rows="3" type="text" name="adresse" id="adresse" 
+                    placeholder="No rue boîte postal"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><b>No pastal / Localité</b></p>
+            </td>
+            <td>
+              <input type="number" name="postalNumber" id="postalNum" value="1000" min="1000" />
+              <input
+                type="text"
+                name="localite"
+                id="localite"
+                value="Casablanca"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <h4>Pays</h4>
+            </td>
+            <td>
+              <select name="Pays" id="Pays">
+                <option value="Morocco" selected="selected">Morocco</option>    
+                <option value="Belgium">Belgium</option>
+                <option value="Canada">Canada</option>
+                <option value="Croatia">Croatia</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><h4>Plateforme(s)</h4></td>
+            <td>
+              <input type="checkbox" name="win" value="windows" class="platform" />
+              <label for="win">Windows</label>
+              <input type="checkbox" name="mac" value="Macinstosh" class="platform" />
+              <label for="mac">Macintosh</label>
+              <input type="checkbox" name="unix" value="Unix" class= "platform" />
+              <label for="unix">Unix</label>
+            </td>
+          </tr>
+          <tr>
+            <td><h4>application(s)</h4></td>
+            <td>
+              <select name="apps" id="apps" size="5" multiple>
+                <option  value="Bureautique">Bureautique</option>
+                <option value="DAO">DAO</option>
+                <option value="Statistiques">Statistiques</option>
+                <option value="SGBD">SGBD</option>
+                <option value="Internet">Internet</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      <button type="submit" id="submitForm">
+        Soumettre la formulaire
+      </button>
+      <button type="reset" id="t2">Effacer</button>
+    </form>
+
+
+    <p id="messagePar"></p>
+  </body>
+  <script src="app.js"></script>
+</html>
